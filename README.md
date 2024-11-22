@@ -1,6 +1,9 @@
 # DelegateManager
+Powershell tool for managing delegate permissions of mailboxes within Exchange Online. \
+
+### Version 0.0.1
 (Project is WIP. Not all functions are currently available.)
-Version 0.0.1
+
 - Available Features:
   - Add Delegate Permissions
   - Generate List of Current Delegate Permissions
