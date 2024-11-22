@@ -11,9 +11,9 @@ Version 0.0.1
   - DelegateManager logging
 
 ## Requirements
-Powershell with ExchangeManagementOnline module
+- Powershell with ExchangeManagementOnline module
  - Note: Currently only tested with Powershell 7.x
-Role with applicable Exchange Online permissions
+- Role with applicable Exchange Online permissions
 
 ## Use
 From within the directory that contains the it-ess-exo-delegatemanager folder:\
