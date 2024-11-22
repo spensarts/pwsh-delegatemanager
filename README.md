@@ -12,7 +12,7 @@ Version 0.0.1
 
 ## Requirements
 - Powershell with ExchangeManagementOnline module
- - Note: Currently only tested with Powershell 7.x
+  - Note: Currently only tested with Powershell 7.x
 - Role with applicable Exchange Online permissions
 
 ## Use
