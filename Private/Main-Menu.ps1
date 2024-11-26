@@ -18,7 +18,7 @@ function Main-Menu {
             }
             5 {
               Write-Host "Exiting script."
-              exit
+              return
             }
             default {
               Write-Host "Invalid choice. Please try again."; Start-Sleep -Seconds 2

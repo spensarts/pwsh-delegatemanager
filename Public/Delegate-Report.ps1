@@ -33,12 +33,13 @@ function Delegate-Report {
           $delegatesReport | Format-Table
         }
         'CSV' {
-          #Removing special characters and naming the csv after the mailbox with date
-          $todaysDate = Get-Date -Format "yyyy-MM-dd"
-          $sanitizedMailbox = $orphanMailbox -replace '[.@]', '_'
-          $fileName = "$HOME\scripts\pwsh\exchange\$todaysDate-$sanitizedMailbox.csv"
+          $savePath = Save-CsvFilePath
 
-          $delegatesReport | Export-Csv -Path $fileName -NoTypeInformation
+          if ($savePath) {
+            $delegatesReport | Export-Csv -Path $savePath -NoTypeInformation
+          } else {
+              Write-Host "Save operation cancelled."
+          }
         }
     }
 }
